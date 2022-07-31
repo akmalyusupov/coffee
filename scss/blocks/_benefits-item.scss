@@ -1,0 +1,6 @@
+.benefits-item{
+    @include box;
+    max-width: 350px;
+    margin-right: 30px;
+    align-items: center;
+}

@@ -5,68 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <header class="site-header container">
+        <a class="site-header__logo" href="#">
+          <img class="site-header__logo-img" src="img/coffeeroasters2.svg" alt="">
+        </a>
+    
+        <nav class="nav site-header__nav">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">HOME</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#">Create your plan</a>
+          </ul>
+        </nav>
+      </header>
    <main>
      <div class="intro container">
         <div class="intro__wraper">
             <p class="intro__title">Great coffee
                 made simple.</p>
-            <p class="intro__link">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+            <p class="intro__text">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
 
-             <a class="intro__link link-section" href="Create your plan"></a>
-             <img class="intro__images" src="" alt="">
-
+             <a class="main-link" href="#">Create your plan</a>
+             
+            
         </div>
      </div>
-     <section class="conteiner collection" >
-        <h2 class="collection__title"></h2>
-        <ul class="  collection__list">
-            <li class="collection__list-item">
-                <img class="collection__item-img"  src="img/kopi2.png" alt="">
-                <h3 class="collection__item-title">Gran Espresso</h3>
-                 <p class="collection__item-text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+     <section class="container collection" >
+        <h2 class="collection__title">our collection</h2>
+        <ul class="collection__list">
+            <li class="collection-item">
+                <img class="collection-item__img"  src="img/kopi1 copy.png" width="255" height="193" alt="">
+                <h3 class="collection-item__title">Gran Espresso</h3>
+                 <p class="collection-item__text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
             </li>
-            <li class="collection__list-item">
-                <img class="collection__item-img" src="img/kopi2.png" alt="">
-                <h3 class="collection__item-title">Gran Espresso</h3>
-                 <p class="collection__item-text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+            <li class="collection-item">
+                <img class="collection-item__img" src="img/kopi2.png" width="255" height="193" alt="">
+                <h3 class="collection-item__title">Planalto</h3>
+                 <p class="collection-item__text">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.</p>
             </li>
-            <li class="collection__list-item">
-                <img class="collection__item-img" src="img/kopi2.png" alt="">
-                <h3 class="collection__item-title">Gran Espresso</h3>
-                 <p class="collection__item-text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+            <li class="collection-item">
+                <img class="collection-item__img" src="img/kopi3.png" width="255" height="193" alt="">
+                <h3 class="collection-item__title">Piccollo</h3>
+                 <p class="collection-item__text">Mild and smooth blend featuring notes of toasted almond and dried cherry.</p>
             </li>
-            <li class="collection__list-item">
-                <img class="collection__item-img" src="img/kopi2.png" alt="">
-                <h3 class="collection__item-title">Gran Espresso</h3>
-                 <p class="collection__item-text">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+            <li class="collection-item">
+                <img class="collection-item__img" src="img/kopi2.png" width="255" height="193" alt="">
+                <h3 class="collection-item__title"> Danche</h3>
+                 <p class="collection-item__text">Ethiopian hand-harvested blend densely packed with vibrant fruit notes.</p>
             </li>
         </ul>
     
        </section>
-       <section class="container benefits">
-        <h2 class="benefits__title">Why choose us?</h2>
-        <p class="benefits__text">A large part of our role is choosing which particular coffees will be featured 
-            in our range. This means working closely with the best coffee growers to give 
-            you a more impactful experience on every level.</p>
-         <ul class="benefits__list">
-            <li class=" benefits__item benefits__item--quality">
-                <h3 class="benefits__item-title">benefits</h3>
-                <p class="benefits__item-text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+       <section class="benefits container">
+        <div class="benefits__content-bacground">
+            <div class="benefits__content-wrapper">
+                <h2 class="benefits__title">Why choose us?</h2>
+                <p class="benefits__description">A large part of our role is choosing which particular coffees will be featured in our range. This means working closely with the best coffee growers to give you a more impactful experience on every level.</p>
+            </div>
+        </div>
+        <ul class="benefits__list">
+            <li class=" benefits-item benefits__item">
+                <h3 class="benefits-item__title">Best quality</h3>
+                <p class="benefits-item__description">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
             </li>
-            <li class=" benefits__item benefits__item--benefits">
-                <h3 class="benefits__item-title">benefits</h3>
-                <p class="benefits__item-text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+            <li class="benefits__item benefits-item benefits-item--gift">
+                <h3 class="benefits-item__title">Exclusive benefits</h3>
+                <p class="benefits-item__description">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
             </li>
-            <li class=" benefits__item benefits__item--shipping">
-                <h3 class="benafits__item-title">benafits</h3>
-                <p class="benefits__item-text">Discover an endless variety of the world’s best artisan coffee from each of our roasters.</p>
+            <li class="benefits__item benefits-item benefits-item--free-shipping">
+                <h3 class="benefits-item__title">Free shipping</h3>
+                <p class="benefits-item__description">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
             </li>
-         </ul>   
-        
+        </ul>
+    </section>
+       <section class="works container ">
+        <h2 class="works__title">How it works</h2>
+        <ul class="works__list">
+            <li class="works-item">
+               <strong class="works-item__number">01</strong>
+               <h3 class="works-item__title">Pick your
+                coffee</h3>
+                <p class="works-item__text"> Select from our evolving range of artisan coffees. Our beans are ethically sourced and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+                
+            </li>
+            <li class="works-item">
+               <strong class="works-item__number">02</strong>
+               <h3 class="works-item__title">Choose the frequency</h3>
+                <p class="works-item__text"> Customize your order frequency, quantity, even your roast style and grind type. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+
+            </li>
+            <li class="works-item">
+               <strong class="works-item__number">03</strong>
+               <h3 class="works-item__title">Receive and enjoy!</h3>
+                <p class="works-item__text">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curated to provide a distinct tasting experience.</p>
+
+            </li>
+        </ul>
+            <a class="works__link " href="#">Create your plan</a>
        </section>
    </main>
+   <footer class="sise-footer container">
+    <a class="site-footer__logo" href="#">
+        <img class="site-footer__logo-img" src="img/coffeeroasters2.svg" alt="">
+      </a>
+    <nav class="footer-nav">
+        <ul class="footer-nav__list">
+            <li class="footer-nav__">
+                <a class="footer-nav__link" href="#">HOME</a>
+            </li>
+            <li class="footer-nav__">
+                <a class="footer-nav__link" href="#">ABOUT US</a>
+            </li>
+            <li class="footer-nav__">
+                <a class="footer-nav__link" href="#">Create your plan</a>
+            </li>
+        </ul>
+    </nav>
+   </footer>
 
 
 </body>

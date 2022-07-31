@@ -1,0 +1,36 @@
+.collection{
+    margin-bottom: 200px;
+}
+.collection__title{
+    text-align: center;
+    margin: 0;
+    font-size: 130px;
+    letter-spacing: 20px;
+    position: relative;
+    opacity: 0.5;
+}
+.collection__title::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);;
+}
+.collection__list{
+    position: absolute;
+    position: relative;
+    @include reset-list;
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    z-index: 1;
+}
+.collection__list :last-child{
+    margin-right: 0;
+}
+
+
+
