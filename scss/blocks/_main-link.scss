@@ -1,13 +1,15 @@
 .main-link{
+    @include fransuer;
     padding: 15px 31px 16px 31px;
     border-radius: $sm-radius;
     color: $white;
     background-color: $yashil;
     text-decoration: none;
-    @include fransuer;
     font-size: 18px;
     line-height: 25px;
+    display: inline-block;
+    text-decoration: none;
 }
 .main-link--works{
-    margin-left: 110px;
+    margin-left: 150px;
 }

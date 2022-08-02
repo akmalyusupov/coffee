@@ -1,0 +1,39 @@
+.works{
+    margin-top: 300px;
+    
+    
+}
+
+.works__container{
+    margin-left: 100px;
+}
+
+.works__title{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    
+    color: #83888F;
+    margin-bottom: 100px;
+}
+
+.works__list{
+   margin: 0;
+   padding: 0;
+    @include  list-style;
+    display: flex;
+    position: relative;
+    
+    
+}
+
+.works__list::before{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 760px;
+    height: 1px;
+    border: 2px solid $gold;
+    transform: translateY(290%)
+
+}

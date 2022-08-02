@@ -1,25 +1,46 @@
 .intro{
+    border-radius: 10px;
     display: flex;
     background-image: url(../../img/coffee.jpg);
-   
- 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 116px 0;
+    margin-top: 20px;
+
 }
 
 
 
 .intro__wraper{
-    width: 493px;
+  padding-left: 85px;
+ 
+  
 }
 
 
 
 .intro__title{
+    margin: 0;
+    color: $white;
     font-weight: 900;
     font-size: 72px;
     line-height: 72px;
-   
-    
+    max-width: 493px;
+    margin-bottom: 32px;
+
 }
+
+.intro__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.8;
+    max-width: 445px;
+    margin-bottom: 56px;
+    color: $white ;
+}
+
+
 
 
 

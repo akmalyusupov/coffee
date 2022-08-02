@@ -1,6 +1,7 @@
 .collection-item{
     text-align: center;
     margin-right: 30px;
+   
 }
 .collection-item__title{
     color: $blue-333;
@@ -16,4 +17,33 @@
     max-width: 255px; 
 
   
+}
+
+@media only screen and (max-width: $tablet) {
+    .collection-item{
+      
+       display: flex;
+        flex-direction: row;
+      align-items: center;
+
+    }
+
+    .collection-item__title{
+       margin-right: 80px;
+    }
+
+    .collection-item__img{
+        margin-top: 25px;
+    }
+      
+
+
+    .collection-item__text{
+      max-width: 282px;
+      height: 50px;
+      text-align: unset;
+    }
+
+  
+    
 }

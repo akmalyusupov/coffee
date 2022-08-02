@@ -1,45 +1,74 @@
-.benefits{
-    margin-bottom: 200px;
+.benefits {
+    background-color: $blue-333;
 }
-.benefits__content-bacground{
-    background-color: $gray;
-    padding-top: 100px;
-    padding-bottom: 317px;
-    border-radius: $big-radius;
-}
-.benefits__content-wrapper{
-    width: 540px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.benefits__title{
-    margin: 0;
-    @include fransuer;
-    color: $white;
-    font-size: 40px;
-    line-height: 48px;
-}
-.benefits__description{
-    @include styles;
-    color: $white;
-    opacity: 0.8;
-    margin: 0;
-    margin-top: 32px;
-    display: flex
-}
-.benefits__list{
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    margin-top: -225px;
-    display: flex;
-}
-.benefits__list :last-child{
-    margin-right: 0;
+.benefits__container {
+    padding: 100px 85px 387px 85px;
     
 }
 
-.benefits__item{
-    background-image: url(../../img/);
+.benefits__wrapper {
+    max-width: 540px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+
+.benefits__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-style: Black;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.benefits__description {
+    margin: 0;
+    color: #FEFCF7;
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.6;
+}
+
+.benefits__list {
+    @include list-style;
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 151px;
+    text-align: center;
+}
+
+@media only screen and (max-width: $tablet) {
+    .benefits__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    
+    .benefits__wrapper {
+        margin-bottom: 70px;
+    }
+    
+    .benefits__container {
+        padding: 56px 58px 368px 50px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .benefits__wrapper {
+        max-width: 279px;
+        margin-bottom: 40px;
+    }
+    .benefits__description {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .benefits__title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .benefits__list {
+        margin-top: 100px;
+    }
 }
