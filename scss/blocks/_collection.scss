@@ -29,7 +29,6 @@
 }
 .collection__list :last-child{
     margin-right: 0;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -46,7 +45,30 @@
     .collection__list{
         display: block;
     }
+
    
+}
+
+@media only screen and (max-width: $mobile) {
+    .collection__list{
+        position: absolute;
+        position: relative;
+        @include reset-list;
+        justify-content: center;
+        display: block;
+        z-index: 1;
+    }
+
+    .collection__title {
+        padding: 0;
+        margin: 0;
+       justify-content: center;
+        max-width: 375px;
+        font-size: 50px;
+        background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+        margin-bottom: 13px; 
+    }
+    
 }
 
 

@@ -13,3 +13,11 @@
 .main-link--works{
     margin-left: 150px;
 }
+
+@media only screen and (max-width: $mobile) {
+    .main-link--works{
+        margin-left: 0;
+       text-align: center;
+      display: block;
+    }
+}
