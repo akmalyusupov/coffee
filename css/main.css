@@ -57,12 +57,12 @@ img {
 
 @media only screen and (max-width: 1280px) {
   .container {
-    max-width: 718px;
+    max-width: 688px;
   }
 }
 @media only screen and (max-width: 768px) {
   .container {
-    max-width: 357px;
+    max-width: 100%;
   }
 }
 .site_header {
@@ -70,9 +70,8 @@ img {
   text-align: center;
 }
 
-.site_header__container {
-  margin: 0;
-  padding: 0;
+.site-header__container {
+  display: flex;
   align-items: center;
 }
 
@@ -141,6 +140,7 @@ img {
   background-repeat: no-repeat;
   padding: 116px 0;
   margin-top: 20px;
+  display: none;
 }
 
 .intro__wraper {
@@ -472,10 +472,19 @@ img {
 
 .site-footer__container {
   display: flex;
-  height: 120px;
   align-items: center;
 }
 
+@media only screen and (max-width: 1280px) {
+  .site-footer {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .site-footer {
+    display: none;
+  }
+}
 .main-link {
   font-family: "Fraunces";
   font-style: normal;

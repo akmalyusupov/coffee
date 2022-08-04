@@ -6,10 +6,19 @@
 
 .site-footer__container{
     display: flex;
-    height: 120px;
     align-items: center;
+}
 
-   
-    
-   
+@media only  screen and (max-width: $tablet) {
+   .site-footer{
+    display: none;
+   }
+
+}
+
+@media only  screen and (max-width: $mobile) {
+   .site-footer{
+    display: none;
+   }
+
 }
