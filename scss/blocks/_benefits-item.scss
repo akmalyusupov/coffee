@@ -58,10 +58,11 @@
     &:last-child {
     margin-bottom: 0;
     }
+
     
-    }
-    
-    
+}
+
+
     .benefits-item::before {
     left: 70px;
     }
@@ -70,7 +71,7 @@
     @media only screen and (max-width: $mobile) {
     .benefits-item {
     display: block;
-    margin: 0 auto;
+    margin: 0 ;
     max-width: 279px;
     padding: 200px 34px 51px 34px;
     margin-bottom: 24px;

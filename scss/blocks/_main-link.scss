@@ -10,14 +10,14 @@
     display: inline-block;
     text-decoration: none;
 }
-.main-link--works{
-    margin-left: 150px;
-}
+
 
 @media only screen and (max-width: $mobile) {
-    .main-link--works{
-        margin-left: 0;
+    .main-link{
+       display: block;
+       margin: 0 auto;
        text-align: center;
-      display: block;
+       max-width: 217px;
+   
     }
 }

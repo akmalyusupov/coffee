@@ -1,12 +1,19 @@
 .site_header{
     display: flex;
     text-align: center;
-    
+   
 }
 
 .site-header__container{
     display: flex;
     align-items: center;
+    
+}
+
+@media only screen and (max-width: $mobile) {
+    .site_header{
+        display: none;
+    }
 }
 
 
