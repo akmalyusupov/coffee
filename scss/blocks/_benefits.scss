@@ -1,25 +1,41 @@
 .benefits {
-    background-color: $blue-333;
+    position: relative;
+    &::before {
+        background-color: $blue-333;
+        padding: 100px 85px 387px 85px;
+        border-radius: $big-radius;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: '';
+    }
 }
 .benefits__container {
-    padding: 100px 85px 387px 85px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    
     
 }
 
 .benefits__wrapper {
+    text-align: center;
     max-width: 540px;
     margin: 0 auto;
     color: #fff;
     text-align: center;
 }
-
 .benefits__title {
+    padding-top: 100px;
     margin: 0;
     margin-bottom: 32px;
     font-style: Black;
     font-size: 40px;
     line-height: 48px;
+    max-width: 540px;
 }
+
 
 .benefits__description {
     margin: 0;
@@ -32,10 +48,12 @@
 .benefits__list {
     @include list-style;
     display: flex;
+    justify-content: center;
     margin: 0 auto;
-    // position: absolute;
-    margin-top: 151px;
     text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
 }
 
 @media only screen and (max-width: $tablet) {
@@ -45,30 +63,66 @@
         align-items: center;
         margin-top: 100px;
     }
-    
-    .benefits__wrapper {
-        margin-bottom: 70px;
+    .benefits__title {
+        padding-top: 50px;
+        margin: 0;
+        margin-bottom: 24px;
+        font-style: Black;
+        font-size: 40px;
+        line-height: 48px;
     }
     
+    
+    
     .benefits__container {
-        padding: 56px 58px 368px 50px;
+        margin: 70px 58px 144px 57px;
     }
 }
 
 @media only screen and (max-width: $mobile) {
+    .benefits {
+        position: relative;
+        &::before {
+            background-color: $blue-333;
+            padding: 64px 24px 950px 24px;
+            border-radius: $big-radius;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            content: '';
+        }
+    }
+    .benefits__container {
+        margin: 0;
+    }
     .benefits__wrapper {
         max-width: 279px;
-        margin-bottom: 40px;
+        
+    }
+    .benefits__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
     }
     .benefits__description {
         font-size: 15px;
         line-height: 25px;
+        text-align: center;
+        margin-bottom: 64px;
+        max-width: 279px;
     }
     .benefits__title {
+        padding-top: 44px;
+        margin: 0;
+        margin-bottom: 32px;
+        font-style: Black;
+        font-weight: 900;
         font-size: 28px;
         line-height: 28px;
+        max-width: 540px;
     }
-    .benefits__list {
-        margin-top: 100px;
-    }
+    
+   
 }

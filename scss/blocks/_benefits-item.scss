@@ -9,10 +9,13 @@
     overflow: hidden;
     position: relative;
     
-    &:last-child {
-    margin-right: 0;
     
-    }
+    // &:nth-child(3) {
+    //   margin-right: 0;
+    // }
+    
+    
+    
     
     
     &::before {
@@ -46,6 +49,7 @@
     
     @media only screen and (max-width: $tablet) {
     .benefits-item {
+    margin-top: 0;    
     display: block;
     margin: 0 auto;
     max-width: 573px;
@@ -54,6 +58,7 @@
     margin-right: unset;
     margin-bottom: 24px;
     position: relative;
+    
     
     &:last-child {
     margin-bottom: 0;

@@ -13,11 +13,12 @@
 
 
 @media only screen and (max-width: $mobile) {
-    .main-link--works{
+    .main-link{
        display: block;
        margin: 0 auto;
        text-align: center;
        max-width: 217px;
+       
    
     }
 }
