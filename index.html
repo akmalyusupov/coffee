@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header ">
         <div class="container site-header__container">
             <a class="site-header__logo" href="#">
                 <img class="site-header__logo-img" src="img/coffeeroasters2.svg" alt="">
@@ -22,13 +22,13 @@
             <nav class="nav site-header__nav">
                 <ul class="nav__list">
                     <li class="nav__list-item">
-                        <a class="nav__link" href="#">HOME</a>
+                        <a class="nav__link site-header__nav-link" href="#">HOME</a>
                     </li>
                     <li class="nav__list-item">
-                        <a class="nav__link" href="#">ABOUT US</a>
+                        <a class="nav__link site-header__nav-link" href="#">ABOUT US</a>
                     </li>
                     <li class="nav__list-item">
-                        <a class="nav__link " href="#">Create your plan</a>
+                        <a class="nav__link site-header__nav-link " href="#">Create your plan</a>
                     </ul>
                 </nav>
             </div>
@@ -148,19 +148,29 @@
                                             <nav class="nav nav__footer">
                                                 <ul class="nav__list">
                                                     <li class="nav__list-item">
-                                                        <a class="nav__link" href="#">HOME</a>
+                                                        <a class="nav__link site-header__nav-link" href="#">HOME</a>
                                                     </li>
                                                     <li class="nav__list-item">
-                                                        <a class="nav__link" href="#">ABOUT US</a>
+                                                        <a class="nav__link site-header__nav-link" href="#">ABOUT US</a>
                                                     </li>
                                                     <li class="nav__list-item">
-                                                        <a class="nav__link " href="#">Create your plan</a>
+                                                        <a class="nav__link site-header__nav-link " href="#">Create your plan</a>
                                                     </li>
                                                 </ul>
                                             </nav>
                                             <img class="nav__group" src="img/Group 20.png" width="120" height="24" alt="">
                                         </div>
                                     </footer>
+
+                                    <script>
+                                        const elToggler = document.querySelector(".site-header__burger")
+                                        const elToggler = document.querySelector(".site-header")
+                                        
+                                        elToggler.addEventListener("click", function(){
+                                            eiHeader.classList.toggle("site-header--opened");
+                                            elToggler.classList.toggle("site-header__burger--opened");
+                                        });
+                                    </script>
                                     
                                     
                                 </div>
