@@ -59,6 +59,9 @@
     }
     
     @media only screen and (max-width: $mobile) {
+        .collection{
+            margin-top: 100px;
+        }
         
         .collection__list{
             position: absolute;
@@ -77,6 +80,7 @@
             font-size: 40px;
             line-height: 72px;
             max-width: 375px;
+            letter-spacing: 1px;
             font-size: 40px;
             background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
             margin-bottom: 13px; 
