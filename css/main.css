@@ -424,7 +424,7 @@ img {
 }
 @media only screen and (max-width: 768px) {
   .collection {
-    margin-top: 100px;
+    margin-top: 40px;
   }
   .collection__list {
     position: absolute;
